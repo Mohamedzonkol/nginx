@@ -1,0 +1,160 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+ .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        /* Navbar Styles */
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+        /* Hero Section Styles */
+        .hero {
+            background-image: url('images/webthings.jpg'); /* Replace with your hero image URL */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+   .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .cta {
+            padding: 15px 30px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid #4CAF50;
+        }
+        .cta:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* Content Section Styles */
+        .content {
+            background-color: #f2f2f2;
+            padding: 50px 0;
+            text-align: center;
+        }
+    .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666666;
+        }
+        .feature {
+            padding: 30px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            color: #4CAF50;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .feature p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333333;
+        }
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <p>Your go-to place for all things awesome.</p>
+            <a href="#features" class="cta">Discover More</a>
+        </div>
+    </div>   
+ <!-- Content Section -->
+    <div id="features" class="content">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature">
+                 <img src="images/apache.png" alt="Feature 1">
+                <h3>Feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero ac est volutpat.</p>
+            </div>
+            <div class="feature">
+                 <img src="images/nginx.png" alt="Feature 2">
+                <h3>Feature 2</h3>
+                <p>Donec non quam vitae lorem feugiat consequat sed nec ex. Integer vel consequat tortor.</p>
+            </div>
+            <div class="feature">
+                <img src="images/docker.png" alt="Feature 3">
+                <h3>Feature 3</h3>
+                <p>Suspendisse potenti. Ut gravida odio in sapien maximus, non vehicula mi venenatis.</p>
+            </div>
+            <div class="feature">
+                 <img src="images/kubernetes.png" alt="Feature 4">
+                <h3>Feature 4</h3>
+                <p>Phasellus vitae orci ac felis aliquet congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubil>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Line -->
+    <a href="/foss" style="font-family: Verdana; color: black;"><h2>Click for More Open Source Projects</h2></a>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Robin Load Balancing Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+        }
+        #currentServer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        async function getCurrentServer() {
+            try {
+                const response = await fetch('/');
+                const data = await response.json();
+                document.getElementById('currentServer').innerText = `Current Server: ${data.server} (Port ${data.port})`;
+            } catch (error) {
+                console.error('Error fetching current server:', error);
+                document.getElementById('currentServer').innerText = 'Error fetching current server';
+            }
+        }
+
+        setInterval(getCurrentServer, 2000); // Refresh every 2 seconds
+        window.onload = getCurrentServer;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Round Robin Load Balancing Demo</h1>
+        <div id="currentServer"></div>
+    </div>
+</body>
+</html>
